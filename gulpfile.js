@@ -2,5 +2,5 @@
 
 var path = require('path');
 
-// Load all tasks in the tasks directory
+// Load tasks
 require('require-all')(path.resolve('tasks'));
