@@ -6,7 +6,7 @@ var gulp = require('gulp');
 gulp.task('build', [
   'clean',
   'build:assets',
-  'build:poc',
+  'build:prototype',
   'build:images',
   'build:styles',
   'build:scripts'
