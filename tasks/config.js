@@ -1,6 +1,6 @@
 'use strict';
 
-// Set up configurations based on environment variables set
+// Add ENV variables here if needed
 var environment = (process.env.NODE_ENV || 'development').trim();
 var port = parseInt(process.env.PORT, 10);
 
