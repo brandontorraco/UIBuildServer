@@ -10,7 +10,7 @@ gulp.task('watch', ['watch:setup', 'build'], function() {
   gulp.watch(path.join(config.source, 'assets/**/*'), ['build:assets']);
   gulp.watch(path.join(config.source, 'images/**/*'), ['build:images']);
   gulp.watch(path.join(config.source, 'styles/**/*'), ['build:styles']);
-  gulp.watch(path.join(config.source, 'poc/**/*'), ['build:poc']);
+  gulp.watch(path.join(config.source, 'prototype/**/*'), ['build:prototype']);
 });
 
 // Turn on watch for any tasks that follow.
