@@ -24,4 +24,4 @@ Bower manages all of our versioned dependancies such as jQuery, Bootstrap & Angu
 This will install all Bower Dependancies
 
 # Run NPM Start
-Navigate to http://localhost:1111 and Begin Devving
+Navigate to http://localhost:1111/poc and Begin Devving
