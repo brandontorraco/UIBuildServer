@@ -9,16 +9,16 @@ var fileinclude = require('gulp-file-include');
 var gulpFilter = require('gulp-filter');
 var config = require('../config');
 
-gulp.task('build:poc', function() {
+gulp.task('build:prototype', function() {
     var filter = gulpFilter(["*", "*.html"], {restore: true});
     return gulp
-    .src(path.join(config.source, 'poc/**/*'))
-    .pipe(changed(path.join(config.destination, 'poc')))
+    .src(path.join(config.source, 'prototype/**/*'))
+    .pipe(changed(path.join(config.destination, 'prototype')))
     .pipe(filter)
     .pipe(fileinclude({
       prefix: '@@'
     }))
     .pipe(filter.restore)
     .pipe((config.watch ? plumber : util.noop)())
-    .pipe(gulp.dest(path.join(config.destination, 'poc')));
+    .pipe(gulp.dest(path.join(config.destination, 'prototype')));
 });
