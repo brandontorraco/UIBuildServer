@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+<body ng-app="myApp" ng-controller="appController">
+
+<style>
+body{
+		background: #{{background}}
+	}
+</style>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Node.JS/Gulp Prototyping Build Server</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/poc/data.html">Data Cube</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>NodeJs/Gulp Build Server with Angular Integration</h1>
+        <p>This is an example Gulp build server build in node using a less compiler for bringing in all bootstrap dependancies and compiling custom less into a single css package file</p>
+        <p>Data binding examples are shown here with default scope data set in the js file.</p>
+        <p>
+			Dynamic Background Color?!: <input ng-model="background" class="form-control"><hr />	
+          <a class="btn btn-lg btn-primary" ng-click="resetBg()" role="button">Reset Background &raquo;</a>
+          <a class="btn btn-primary" ng-click="orangeBg()" role="button">Orange Background &raquo;</a>
+          <a class="btn btn-primary" ng-click="redBg()" role="button">Red Background &raquo;</a>
+          <a class="btn btn-primary" ng-click="blueBg()" role="button">Blue Background &raquo;</a>
+          <a class="btn btn-primary" ng-click="purpleBg()" role="button">Purple Background &raquo;</a>
+
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+<!-- spacer section -->
+<section class="spacer green">
+<div class="container">
+	<div class="row">
+		<div class="span6 alignright flyLeft">
+			<blockquote class="large" style="background:#fff;">
+				 There's huge space beetween creativity and imagination <cite>Mark Simmons, Nett Media</cite>
+			</blockquote>
+		</div>
+		<div class="span6 aligncenter flyRight">
+			<i class="icon-coffee icon-10x"></i>
+		</div>
+	</div>
+</div>
+</section>
+<!-- end spacer section -->
+
+
+	<div class="container" ng-cloak>
+
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><h2 class="media-heading">Enter Your Name</h2></div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6">
+								<label>First Name:</label>
+								<input ng-model="firstname" class="form-control">								
+							</div>
+
+							<div class="col-md-6">
+								<label>Phone:</label>
+								<input ng-model="phone" class="form-control">								
+							</div>
+
+							<div class="col-md-6">
+								<label>Last Name:</label>
+								<input ng-model="lastname" class="form-control">								
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer text-center">Call me at {{phone}}</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><h2 class="media-heading">Angular Data Binding</h2></div>
+					<div class="panel-body text-center">
+						<h3>Hello {{firstname}} {{lastname}}</h3>
+					</div>
+					<div class="panel-footer text-center"><a ng-click="doStuff()" class="btn btn-primary">NG Click Example</a></div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><h2 class="media-heading">Shopping List</h2></div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item" 
+								ng-repeat="stuff in listOfStuff">
+								{{stuff}}
+							</li>
+						</ul>
+					</div>
+					<div class="panel-footer text-center"><a ng-click="makeTheList()" class="btn btn-primary">Healthy List</a>
+					<a ng-click="changeTheList()" class="btn btn-primary">Yummy List</a></div>
+				</div>
+			</div>
+
+		</div>		
+
+	<section>
+		<div class="row">
+
+          <div class="col-md-3">
+            <img class="img thumbnail" src="http://placehold.it/265x280" alt="100%x280" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="col-md-3">
+            <img class="img thumbnail" src="http://placehold.it/265x280" alt="100%x280" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="col-md-3">
+            <img class="img thumbnail" src="http://placehold.it/265x280" alt="100%x280" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="col-md-3">
+            <img class="img thumbnail" src="http://placehold.it/265x280" alt="100%x280" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+
+        </div>		
+	</section>
+
+	</div>
+
+<footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Footer content here</p>
+      </div>
+    </footer>
+
+<script src="../scripts/common.js"></script>
+<script src="../scripts/webapp.js"></script>
+
+</body>
+
+</html>
