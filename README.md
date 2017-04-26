@@ -12,16 +12,11 @@ Installs the Command line tools for using GIT
 Git Clone https://github.com/brandontorraco/UIBuildServer.git
 This copies the UI Build Server to your machine
 
-# Open Terminal / CMD and Navigate to Folder location
-Run NPM Install
-This command installs all Node Dependancies
-
-# Run NPM Install Bower
-This will install the NPM package for Bower
-Bower manages all of our versioned dependancies such as jQuery, Bootstrap & Angular
-
-# Run Bower Install
-This will install all Bower Dependancies
+# Install Dependancies
+1. Open Terminal / CMD and Navigate to Folder location
+2. Run NPM Install (This command installs all Node Dependancies)
+3. Run NPM Install Bower (This will install Bower for managing jQuery, Bootstrap & Angular)
+4. Run Bower Install (This will install all Bower Dependancies)
 
 # Run NPM Start
-Navigate to http://localhost:1111/poc and Begin Devving
+Navigate to http://localhost:1111/prototype to Begin Devving
