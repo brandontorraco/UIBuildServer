@@ -19,4 +19,6 @@ This copies the UI Build Server to your machine
 4. Run Bower Install (This will install all Bower Dependancies)
 
 # Run NPM Start
-Navigate to http://localhost:1111/prototype to Begin Devving
+Navigate to http://localhost:1111/prototype
+
+# HAPPY DEVVING!
