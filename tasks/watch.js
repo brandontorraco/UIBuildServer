@@ -10,11 +10,7 @@ gulp.task('watch', ['watch:setup', 'build'], function() {
   gulp.watch(path.join(config.source, 'assets/**/*'), ['build:assets']);
   gulp.watch(path.join(config.source, 'images/**/*'), ['build:images']);
   gulp.watch(path.join(config.source, 'styles/**/*'), ['build:styles']);
-
-  // If not doing a SharePoint build, add POC files
-  if(!config.sharepoint) {
-    gulp.watch(path.join(config.source, 'poc/**/*'), ['build:poc']);
-  }
+  gulp.watch(path.join(config.source, 'poc/**/*'), ['build:poc']);
 });
 
 // Turn on watch for any tasks that follow.
