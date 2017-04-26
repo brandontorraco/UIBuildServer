@@ -1,16 +1,22 @@
 # UIBuildServer
 Ui Build Server - NodeJS NPM Gulp WebPack
 
-#Install Node.JS
+# Install Node.JS
 https://nodejs.org/en/
 
-#Clone Repo into your desired location
+# Clone Repo into your desired location
+This copies the UI Build Server to your machine
 
-#Open Terminal / CMD and Navigate to Folder location
+# Open Terminal / CMD and Navigate to Folder location
 Run NPM Install
+This command installs all Node Dependancies
 
-#Run NPM Install Bower
+# Run NPM Install Bower
+This will install the NPM package for Bower
+Bower manages all of our versioned dependancies such as jQuery, Bootstrap & Angular
 
-#Run Bower Install
+# Run Bower Install
+This will install all Bower Dependancies
 
-#Run NPM Start
+# Run NPM Start
+Navigate to http://localhost:1111 and Begin Devving
